@@ -23,7 +23,7 @@ export default class ProgressiveImage extends React.Component<Props, State> {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     const { src } = this.props;
     this.loadImage(src);
   }
